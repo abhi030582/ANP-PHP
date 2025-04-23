@@ -39,5 +39,12 @@ for ($i = 7; $i >= 1; $i--) {
 }
 ?>
 
+<?php
+$str = "PHP,Java,Python,C++";
+$arr = explode(",", $str);
+print_r($arr);
+?>
+
+
 </body>
 </html>
