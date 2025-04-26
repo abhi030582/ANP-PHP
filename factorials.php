@@ -42,7 +42,12 @@ function factorial($n) {
 
 $number = 5;
 echo ("Factorial". $number);
+
+$today = date("l"); 
+echo "Today is: $today";
 ?>
+
+
 
 
 ?>
