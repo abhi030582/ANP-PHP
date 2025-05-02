@@ -4,9 +4,7 @@
     <title>Simple Calculator</title>
 </head>
 <body>
-
 <h2>Simple Calculator</h2>
-
 <form method="post">
     Enter first number: <input type="number" name="num1" required><br><br>
     Enter second number: <input type="number" name="num2" required><br><br>
