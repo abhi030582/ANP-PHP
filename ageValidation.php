@@ -5,17 +5,15 @@ class InvalidAgeException extends Exception {
         return $this->getMessage();
     }
 }
-function validateAge($age) {
-    if (!is_numeric($age)) {
-        throw new InvalidAgeException("Age must be a number.");
+function validateAge($num) {
+    if ($num < 0) {
+        throw new InvalidAgeException("number is negative.");
     }
-    if ($age < 0) {
-        throw new InvalidAgeException("Age cannot be negative.");
+    else
+    {
+        echo "number is positive";
     }
-    if ($age > 130) {
-        throw new InvalidAgeException("Invalid Age group.");
-    }
-    echo "Valid age: $age years\n";
+   
 }
 try {
     $age = 150;  
